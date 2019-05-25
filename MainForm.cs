@@ -40,5 +40,11 @@ namespace Registro
             rCargos frm = new rCargos();
             frm.Show();
         }
+
+        private void ConsultaCargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cConsultas frm = new cConsultas();
+            frm.Show();
+        }
     }
-    }
+}

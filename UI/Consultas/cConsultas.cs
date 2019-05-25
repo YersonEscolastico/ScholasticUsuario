@@ -32,24 +32,22 @@ namespace Registro
                         break;
 
                     case "Id":
-                        int id = Convert.ToInt32(CriteriotextBox.Text);
+                        int id = Convert.ToInt32(CriterioTextBox.Text);
                         listado = CargosBLL.GetList(p => p.CargoId == id);
                         break;
 
                     case "Descripcion":
-                        listado = CargosBLL.GetList(p => p.Descripcion.Contains(CriteriotextBox.Text));
+                        listado = CargosBLL.GetList(p => p.Descripcion.Contains(CriterioTextBox.Text));
                         break;
-
                 }
-
             }
             else
             {
                 listado = CargosBLL.GetList(p => true);
             }
 
-            ConsultadataGridView.DataSource = null;
-            ConsultadataGridView.DataSource = listado;
+            dataGridView.DataSource = null;
+            dataGridView.DataSource = listado;
         }
     }
 }
