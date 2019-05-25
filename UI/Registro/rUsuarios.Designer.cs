@@ -280,7 +280,6 @@
             this.Controls.Add(this.IDNumericUpDown);
             this.Name = "PrincipalForm";
             this.Text = "UsuarioForm";
-            this.Load += new System.EventHandler(this.PrincipalForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);

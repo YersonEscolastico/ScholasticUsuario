@@ -199,10 +199,5 @@ namespace Registro
             else
                 MyErrorProvider.SetError(IDNumericUpDown, "No se puede eliminar una persona que no existe");
         }
-
-        private void PrincipalForm_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

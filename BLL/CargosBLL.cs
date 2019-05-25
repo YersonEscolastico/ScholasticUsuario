@@ -90,5 +90,21 @@ namespace Registro.BLL
             return cargos;
         }
 
+        public static List<Cargo> GetList(Expression<Func<Cargo, bool>> cargos)
+        {
+            List<Cargo> people = new List<Cargo>();
+            ContextoCargo db = new ContextoCargo();
+            try
+            {
+                people = db.cargos.Where(cargos).ToList();
+                db.Dispose();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return people;
+        }
+
     }
 }
