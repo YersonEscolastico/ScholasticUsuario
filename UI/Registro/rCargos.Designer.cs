@@ -149,7 +149,6 @@
             this.Controls.Add(this.IDNumericUpDown);
             this.Name = "rCargos";
             this.Text = "rCargos";
-            this.Load += new System.EventHandler(this.RCargos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
