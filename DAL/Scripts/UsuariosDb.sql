@@ -9,3 +9,4 @@ NivelUsuario varchar(30),
 Clave varchar(30),
 FechaIngreso DateTime
 )
+
