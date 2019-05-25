@@ -10,3 +10,8 @@ Clave varchar(30),
 FechaIngreso DateTime
 )
 
+create table Cargos(
+CargoId int primary key identity,
+Descripcion varchar(30),
+)
+
