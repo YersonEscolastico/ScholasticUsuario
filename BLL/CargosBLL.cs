@@ -90,6 +90,5 @@ namespace Registro.BLL
             return cargos;
         }
 
-
     }
 }

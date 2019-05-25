@@ -68,22 +68,9 @@ namespace Registro
 
         private bool Validar()
         {
-            string clave = ClaveTextBox.Text;
-            string confirmacion = ConfirmarClaveTextBox.Text;
-
-            int result = 0;
-            result = string.Compare(clave, confirmacion);
-
             bool paso = false;
 
-            if (result != 0)
-            {
-                MyErrorProvider.SetError(ConfirmarClaveTextBox, "Las claves no coinciden");
-                ConfirmarClaveTextBox.Focus();
-                paso = true;
-            }
-
-            if (NivelUsuarioComboBox.Text == string.Empty)
+            if (NombreTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(NombreTextBox, "Este campo no puede estar vacio");
                 NombreTextBox.Focus();
@@ -95,16 +82,30 @@ namespace Registro
                 EmailTextBox.Focus();
                 paso = true;
             }
-            if (EmailTextBox.Text == string.Empty)
+            if (UsuariosTextBox.Text == string.Empty)
             {
-                MyErrorProvider.SetError(EmailTextBox, "Este campo no puede estar vacio");
-                EmailTextBox.Focus();
+                MyErrorProvider.SetError(UsuariosTextBox, "Este campo no puede estar vacio");
+                UsuariosTextBox.Focus();
                 paso = true;
             }
+
             if (NivelUsuarioComboBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(NivelUsuarioComboBox, "No puede dejar este campo vacio");
                 NivelUsuarioComboBox.Focus();
+                paso = true;
+            }
+
+            string clave = ClaveTextBox.Text;
+            string confirmacion = ConfirmarClaveTextBox.Text;
+
+            int result = 0;
+            result = string.Compare(clave, confirmacion);
+
+            if (result != 0)
+            {
+                MyErrorProvider.SetError(ConfirmarClaveTextBox, "Las claves no coinciden");
+                ConfirmarClaveTextBox.Focus();
                 paso = true;
             }
 
@@ -197,6 +198,11 @@ namespace Registro
 
             else
                 MyErrorProvider.SetError(IDNumericUpDown, "No se puede eliminar una persona que no existe");
+        }
+
+        private void PrincipalForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

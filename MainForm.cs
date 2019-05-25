@@ -34,5 +34,11 @@ namespace Registro
             PrincipalForm frm = new PrincipalForm();
             frm.Show();
         }
+
+        private void CargosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rCargos frm = new rCargos();
+            frm.Show();
+        }
     }
     }
