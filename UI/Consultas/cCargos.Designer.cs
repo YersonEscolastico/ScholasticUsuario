@@ -37,9 +37,9 @@
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.FiltrocomboBox = new System.Windows.Forms.ComboBox();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
-            this.ConsultarButton = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.consultarB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -119,35 +119,39 @@
             this.CriterioTextBox.Size = new System.Drawing.Size(223, 20);
             this.CriterioTextBox.TabIndex = 7;
             // 
-            // ConsultarButton
-            // 
-            this.ConsultarButton.Location = new System.Drawing.Point(549, 27);
-            this.ConsultarButton.Name = "ConsultarButton";
-            this.ConsultarButton.Size = new System.Drawing.Size(75, 23);
-            this.ConsultarButton.TabIndex = 8;
-            this.ConsultarButton.Text = "Consultar";
-            this.ConsultarButton.UseVisualStyleBackColor = true;
-            this.ConsultarButton.Click += new System.EventHandler(this.ConsultarButton_Click);
-            // 
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(12, 54);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(604, 384);
+            this.dataGridView.Size = new System.Drawing.Size(643, 258);
             this.dataGridView.TabIndex = 9;
             // 
             // MyErrorProvider
             // 
             this.MyErrorProvider.ContainerControl = this;
             // 
+            // consultarB
+            // 
+            this.consultarB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consultarB.Image = global::Registro.Properties.Resources.Buscar;
+            this.consultarB.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.consultarB.Location = new System.Drawing.Point(549, 11);
+            this.consultarB.Name = "consultarB";
+            this.consultarB.Size = new System.Drawing.Size(106, 37);
+            this.consultarB.TabIndex = 19;
+            this.consultarB.Text = "           Consultar";
+            this.consultarB.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.consultarB.UseVisualStyleBackColor = true;
+            this.consultarB.Click += new System.EventHandler(this.ConsultarB_Click);
+            // 
             // cConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 450);
+            this.ClientSize = new System.Drawing.Size(665, 324);
+            this.Controls.Add(this.consultarB);
             this.Controls.Add(this.dataGridView);
-            this.Controls.Add(this.ConsultarButton);
             this.Controls.Add(this.CriterioTextBox);
             this.Controls.Add(this.FiltrocomboBox);
             this.Controls.Add(this.dateTimePicker2);
@@ -175,8 +179,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.ComboBox FiltrocomboBox;
         private System.Windows.Forms.TextBox CriterioTextBox;
-        private System.Windows.Forms.Button ConsultarButton;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.ErrorProvider MyErrorProvider;
+        private System.Windows.Forms.Button consultarB;
     }
 }

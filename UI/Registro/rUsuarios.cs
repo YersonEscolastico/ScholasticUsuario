@@ -68,32 +68,33 @@ namespace Registro
 
         private bool Validar()
         {
-            bool paso = false;
+            bool paso = true;
             MyErrorProvider.Clear();
+
             if (NombreTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(NombreTextBox, "Este campo no puede estar vacio");
                 NombreTextBox.Focus();
-                paso = true;
+                paso = false;
             }
             if (EmailTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(EmailTextBox, "Este campo no puede estar vacio");
                 EmailTextBox.Focus();
-                paso = true;
+                paso = false;
             }
             if (UsuariosTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(UsuariosTextBox, "Este campo no puede estar vacio");
                 UsuariosTextBox.Focus();
-                paso = true;
+                paso = false;
             }
 
             if (NivelUsuarioComboBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(NivelUsuarioComboBox, "No puede dejar este campo vacio");
                 NivelUsuarioComboBox.Focus();
-                paso = true;
+                paso = false;
             }
 
             string clave = ClaveTextBox.Text;
@@ -106,14 +107,14 @@ namespace Registro
             {
                 MyErrorProvider.SetError(ConfirmarClaveTextBox, "Las claves no coinciden");
                 ConfirmarClaveTextBox.Focus();
-                paso = true;
+                paso = false;
             }
 
             if (ClaveTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(ClaveTextBox, "Este campo no puede estar vacio");
                 ClaveTextBox.Focus();
-                paso = true;
+                paso = false;
             }
 
             return paso;

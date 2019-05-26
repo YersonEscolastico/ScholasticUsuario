@@ -40,7 +40,8 @@ namespace Registro
 
             return paso;
         }
-        private void ConsultarButton_Click(object sender, EventArgs e)
+
+        private void ConsultarB_Click(object sender, EventArgs e)
         {
             var listado = new List<Cargo>();
 
