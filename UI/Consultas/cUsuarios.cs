@@ -19,7 +19,6 @@ namespace Registro
             InitializeComponent();
         }
 
-
         private bool Validar()
         {
             bool paso = false;
