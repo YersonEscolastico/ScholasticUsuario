@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,7 +39,9 @@
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.ConsultarButton = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
+            this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -134,6 +137,10 @@
             this.dataGridView.Size = new System.Drawing.Size(604, 384);
             this.dataGridView.TabIndex = 9;
             // 
+            // MyErrorProvider
+            // 
+            this.MyErrorProvider.ContainerControl = this;
+            // 
             // cConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,6 +159,7 @@
             this.Name = "cConsultas";
             this.Text = "cConsultas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +177,6 @@
         private System.Windows.Forms.TextBox CriterioTextBox;
         private System.Windows.Forms.Button ConsultarButton;
         private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.ErrorProvider MyErrorProvider;
     }
 }
