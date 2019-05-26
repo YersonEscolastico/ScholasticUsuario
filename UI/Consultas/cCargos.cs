@@ -22,15 +22,7 @@ namespace Registro
 
         private bool Validar()
         {
-            Int32 CargoId = 0;
-            bool res = Int32.TryParse(CriterioTextBox.Text.Trim(), out CargoId);
             bool paso = false;
-
-            if (res == false)
-            {
-                MessageBox.Show("Solamente datos numericos");
-            }
-
             if (FiltrocomboBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(FiltrocomboBox, "Este campo no puede estar vacio");
