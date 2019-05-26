@@ -49,13 +49,14 @@ namespace Registro
 
         private bool Validar()
         {
-            bool paso = false;
+            bool paso = true;
+            MyErrorProvider.Clear();
 
             if (DescripcionTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(DescripcionTextBox, "Este campo no puede estar vacio");
                 DescripcionTextBox.Focus();
-                paso = true;
+                paso = false;
             }
             return paso;
         }

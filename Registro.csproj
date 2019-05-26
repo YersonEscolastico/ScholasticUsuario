@@ -128,7 +128,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="UI\Registro\App.config" />
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

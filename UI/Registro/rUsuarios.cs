@@ -69,7 +69,7 @@ namespace Registro
         private bool Validar()
         {
             bool paso = false;
-
+            MyErrorProvider.Clear();
             if (NombreTextBox.Text == string.Empty)
             {
                 MyErrorProvider.SetError(NombreTextBox, "Este campo no puede estar vacio");

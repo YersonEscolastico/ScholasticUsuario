@@ -279,7 +279,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.IDNumericUpDown);
             this.Name = "PrincipalForm";
-            this.Text = "UsuarioForm";
+            this.Text = "rUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.IDNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).EndInit();
             this.ResumeLayout(false);

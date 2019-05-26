@@ -19,6 +19,7 @@ namespace Registro
             InitializeComponent();
         }
 
+
         private void ConsultarButton_Click(object sender, EventArgs e)
         {
             var listado = new List<Usuario>();
@@ -61,5 +62,7 @@ namespace Registro
             dataGridView.DataSource = null;
             dataGridView.DataSource = listado;
         }
+
+      
     }
 }
