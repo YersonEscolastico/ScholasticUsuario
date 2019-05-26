@@ -21,29 +21,41 @@ namespace Registro
 
         private void ConsultarButton_Click(object sender, EventArgs e)
         {
-            var listado = new List<Cargo>();
+            var listado = new List<Usuario>();
 
             if (CriterioTextBox.Text.Trim().Length > 0)
             {
                 switch (FiltrocomboBox.Text)
                 {
                     case "Todo":
-                        listado = CargosBLL.GetList(p => true);
+                        listado = UsuariosBll.GetList(p => true);
                         break;
 
                     case "Id":
                         int id = Convert.ToInt32(CriterioTextBox.Text);
-                        listado = CargosBLL.GetList(p => p.CargoId == id);
+                        listado = UsuariosBll.GetList(p => p.UsuarioId == id);
                         break;
 
-                    case "Descripcion":
-                        listado = CargosBLL.GetList(p => p.Descripcion.Contains(CriterioTextBox.Text));
+                    case "Nombre":
+                        listado = UsuariosBll.GetList(p => p.Nombre.Contains(CriterioTextBox.Text));
+                        break;
+
+                    case "Email":
+                        listado = UsuariosBll.GetList(p => p.Email.Contains(CriterioTextBox.Text));
+                        break;
+
+                    case "Usuarios":
+                        listado = UsuariosBll.GetList(p => p.Usuarios.Contains(CriterioTextBox.Text));
+                        break;
+
+                    case "Nivel de usuarios":
+                        listado = UsuariosBll.GetList(p => p.NivelUsuario.Contains(CriterioTextBox.Text));
                         break;
                 }
             }
             else
             {
-                listado = CargosBLL.GetList(p => true);
+                listado = UsuariosBll.GetList(p => true);
             }
 
             dataGridView.DataSource = null;

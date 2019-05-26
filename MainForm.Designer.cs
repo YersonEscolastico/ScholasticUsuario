@@ -104,6 +104,7 @@
             this.consultaDeUsuariosToolStripMenuItem.Name = "consultaDeUsuariosToolStripMenuItem";
             this.consultaDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.consultaDeUsuariosToolStripMenuItem.Text = "Consulta de usuarios";
+            this.consultaDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.ConsultaDeUsuariosToolStripMenuItem_Click);
             // 
             // consultaCargosToolStripMenuItem
             // 

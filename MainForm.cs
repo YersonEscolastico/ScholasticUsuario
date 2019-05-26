@@ -46,5 +46,11 @@ namespace Registro
             cConsultas frm = new cConsultas();
             frm.Show();
         }
+
+        private void ConsultaDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            cUsuarios frm = new cUsuarios();
+            frm.Show();
+        }
     }
 }
