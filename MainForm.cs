@@ -19,16 +19,6 @@ namespace Registro
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void RegistroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void UsuarioToolStripMenuItem_Click(object sender, EventArgs e)
         {
             PrincipalForm frm = new PrincipalForm();
