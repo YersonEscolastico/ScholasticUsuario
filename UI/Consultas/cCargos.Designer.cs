@@ -151,7 +151,6 @@
             this.Controls.Add(this.label1);
             this.Name = "cConsultas";
             this.Text = "cConsultas";
-            this.Load += new System.EventHandler(this.CConsultas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
