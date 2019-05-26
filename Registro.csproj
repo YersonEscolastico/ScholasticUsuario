@@ -145,6 +145,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DAL\Scripts\UsuariosDb.sql" />
+    <None Include="Resources\Buscar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.ConsultarButton = new System.Windows.Forms.Button();
             this.CriterioTextBox = new System.Windows.Forms.TextBox();
             this.FiltrocomboBox = new System.Windows.Forms.ComboBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
@@ -40,6 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.MyErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.ConsultarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MyErrorProvider)).BeginInit();
             this.SuspendLayout();
@@ -47,26 +47,16 @@
             // dataGridView
             // 
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 54);
+            this.dataGridView.Location = new System.Drawing.Point(12, 56);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(604, 384);
+            this.dataGridView.Size = new System.Drawing.Size(646, 338);
             this.dataGridView.TabIndex = 19;
-            // 
-            // ConsultarButton
-            // 
-            this.ConsultarButton.Location = new System.Drawing.Point(549, 29);
-            this.ConsultarButton.Name = "ConsultarButton";
-            this.ConsultarButton.Size = new System.Drawing.Size(75, 23);
-            this.ConsultarButton.TabIndex = 18;
-            this.ConsultarButton.Text = "Consultar";
-            this.ConsultarButton.UseVisualStyleBackColor = true;
-            this.ConsultarButton.Click += new System.EventHandler(this.ConsultarButton_Click);
             // 
             // CriterioTextBox
             // 
-            this.CriterioTextBox.Location = new System.Drawing.Point(320, 30);
+            this.CriterioTextBox.Location = new System.Drawing.Point(329, 31);
             this.CriterioTextBox.Name = "CriterioTextBox";
-            this.CriterioTextBox.Size = new System.Drawing.Size(223, 20);
+            this.CriterioTextBox.Size = new System.Drawing.Size(205, 20);
             this.CriterioTextBox.TabIndex = 17;
             // 
             // FiltrocomboBox
@@ -79,7 +69,7 @@
             "Usuario",
             "Nivel de usuario",
             "Fecha ingreso"});
-            this.FiltrocomboBox.Location = new System.Drawing.Point(227, 29);
+            this.FiltrocomboBox.Location = new System.Drawing.Point(227, 30);
             this.FiltrocomboBox.Name = "FiltrocomboBox";
             this.FiltrocomboBox.Size = new System.Drawing.Size(87, 21);
             this.FiltrocomboBox.TabIndex = 16;
@@ -124,7 +114,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(320, 11);
+            this.label2.Location = new System.Drawing.Point(326, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 11;
@@ -144,11 +134,25 @@
             // 
             this.MyErrorProvider.ContainerControl = this;
             // 
+            // ConsultarButton
+            // 
+            this.ConsultarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConsultarButton.Image = global::Registro.Properties.Resources.Buscar;
+            this.ConsultarButton.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.ConsultarButton.Location = new System.Drawing.Point(552, 11);
+            this.ConsultarButton.Name = "ConsultarButton";
+            this.ConsultarButton.Size = new System.Drawing.Size(106, 37);
+            this.ConsultarButton.TabIndex = 18;
+            this.ConsultarButton.Text = "           Consultar";
+            this.ConsultarButton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ConsultarButton.UseVisualStyleBackColor = true;
+            this.ConsultarButton.Click += new System.EventHandler(this.ConsultarButton_Click);
+            // 
             // cUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 450);
+            this.ClientSize = new System.Drawing.Size(666, 402);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.ConsultarButton);
             this.Controls.Add(this.CriterioTextBox);
